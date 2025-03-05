@@ -109,7 +109,7 @@ The easiest task for me to complete was Task 3. During my review, I noticed that
  
 ```
 The most difficult task for me was Task 1. It required listing all possible scenarios for testing, which was quite comprehensive. Additionally, I had to implement automation for those scenarios wherever feasible, ensuring that the tests were both thorough and efficient. The complexity came from the need to cover all edge cases while maintaining accuracy in the automation scripts.
-
+```
 
 ### Submitting your test response
 We would like you to demonstrate your ability to use `GIT` when submitting your changes in completing The Tasks in this Technical Brief.
