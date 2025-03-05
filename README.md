@@ -85,26 +85,31 @@ Please edit `README.md` with answers to the following questions:
 1. How long did each of the tasks take you to complete, roughly :question:
 
 ```
-<Insert your answer here>
+Task 1 – This task took approximately 3 to 3.5 hours. I spent time thoroughly listing all possible test scenarios and implementing automation steps where applicable to ensure comprehensive coverage.
+
+Task 2 – This task took about 10 minutes. I quickly analyzed the scenario and removed any unnecessary steps.
+
+Task 3 – This task was completed in around 10 minutes. During my review, I identified that the "Submit" step was missing, and I promptly added it to ensure the form could be submitted correctly.
 ```
 
 2. In reviewing the base solution provided to you by us, is there anything you would have done differently :question:
 
 ```
-<Insert your answer here>
+I observed that some field validations are not functioning as expected. For instance, the "Name" field is accepting numerical inputs, which would be considered a bug in a real-world scenario. To work around this, I made some assumptions to ensure the tests passed.
+Additionally, I recommend using a Scenario Outline for testing validation of fields such as email, phone number, and similar inputs. This approach would allow for more efficient and reusable validation checks across different data sets, ensuring the application handles edge cases appropriately.
 ```
 
 3.  Which of the tasks did you find was the easiest for you to complete, why :question:
 
 ```
-<Insert your answer here>
+The easiest task for me to complete was Task 3. During my review, I noticed that the "Submit" step was missing, which was essential for completing the form submission process. I quickly addressed this by adding the necessary steps to ensure the form could be submitted successfully.
 ```
 
 4. Which of the tasks did you find was the most difficult for you to complete, why :question:
  
 ```
-<Insert your answer here>
-```
+The most difficult task for me was Task 1. It required listing all possible scenarios for testing, which was quite comprehensive. Additionally, I had to implement automation for those scenarios wherever feasible, ensuring that the tests were both thorough and efficient. The complexity came from the need to cover all edge cases while maintaining accuracy in the automation scripts.
+
 
 ### Submitting your test response
 We would like you to demonstrate your ability to use `GIT` when submitting your changes in completing The Tasks in this Technical Brief.
