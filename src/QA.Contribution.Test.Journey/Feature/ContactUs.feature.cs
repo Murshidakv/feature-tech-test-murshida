@@ -119,18 +119,15 @@ namespace QA.Contribution.Test.Journey.Feature
             await this.TestTearDownAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="The one where the customer successfully submits a Basic Message", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="The one where the customer successfully submits a Basic Message")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "The one where the customer successfully submits a Basic Message")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task TheOneWhereTheCustomerSuccessfullySubmitsABasicMessage()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("The one where the customer successfully submits a Basic Message", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 32
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -140,16 +137,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 33
+#line 32
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 34
+#line 33
  await testRunner.WhenAsync("the customer enters a Basic Message", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 35
+#line 34
  await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 36
+#line 35
  await testRunner.ThenAsync("the message is successfully submitted", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -166,7 +163,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "refactor"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("The one where the customer provides an invalid email address", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 39
+#line 38
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -176,19 +173,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 40
+#line 39
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 41
+#line 40
  await testRunner.WhenAsync("the customer types an empty string into the email address field", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 42
+#line 41
  await testRunner.AndAsync("the user types a message into the message body field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 43
+#line 42
  await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 44
+#line 43
  await testRunner.ThenAsync("the customer is informed of the email validation error", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -205,7 +202,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "failing"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("The one where the customer provides a malformed email address", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 47
+#line 46
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -215,11 +212,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 48
+#line 47
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 49
+#line 48
  await testRunner.WhenAsync("the customer completes a Basic Message with a malformed email address", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 49
+ await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 50
  await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
@@ -228,15 +228,12 @@ this.ScenarioInitialize(scenarioInfo);
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="The one where customer submits with valid details", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="The one where customer submits with valid details")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "The one where customer submits with valid details")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task TheOneWhereCustomerSubmitsWithValidDetails()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("The one where customer submits with valid details", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 52
@@ -265,15 +262,12 @@ this.ScenarioInitialize(scenarioInfo);
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Verifying Mandatory fields", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="Verifying Mandatory fields")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "Verifying Mandatory fields")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task VerifyingMandatoryFields()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Verifying Mandatory fields", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 58
@@ -333,18 +327,15 @@ this.ScenarioInitialize(scenarioInfo);
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Phone number validation with special characters", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="Phone number validation with special characters")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "Phone number validation with special characters")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task PhoneNumberValidationWithSpecialCharacters()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Phone number validation with special characters", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 70
+#line 69
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -354,35 +345,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 71
+#line 70
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 72
+#line 71
  await testRunner.WhenAsync("the customer completes the form with special characters in the phone number field" +
                         " and valid data in all other fields", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 73
+#line 72
  await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 74
+#line 73
  await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Validate phone number field with incorrect length - Longer numbers than required", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="Validate phone number field with incorrect length - Longer numbers than required")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "Validate phone number field with incorrect length - Longer numbers than required")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task ValidatePhoneNumberFieldWithIncorrectLength_LongerNumbersThanRequired()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validate phone number field with incorrect length - Longer numbers than required", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 76
+#line 75
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -392,37 +380,34 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 77
+#line 76
     await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 78
+#line 77
     await testRunner.WhenAsync("the customer enters a phone number longer than the required length", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 79
+#line 78
     await testRunner.AndAsync("the customer enters valid details in all other fields except phone", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 79
+    await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 80
-    await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 81
     await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Validate phone number field with incorrect length- Shorter numbers than required", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="Validate phone number field with incorrect length- Shorter numbers than required")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "Validate phone number field with incorrect length- Shorter numbers than required")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task ValidatePhoneNumberFieldWithIncorrectLength_ShorterNumbersThanRequired()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validate phone number field with incorrect length- Shorter numbers than required", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 83
+#line 82
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -432,37 +417,34 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 84
+#line 83
     await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 85
+#line 84
     await testRunner.WhenAsync("the customer enters a phone number shorter than the required length", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 86
+#line 85
     await testRunner.AndAsync("the customer enters valid details in all other fields except phone", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 87
+#line 86
     await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 88
+#line 87
     await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Validate Empty Subject Field", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="Validate Empty Subject Field")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "Validate Empty Subject Field")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task ValidateEmptySubjectField()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validate Empty Subject Field", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 90
+#line 89
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -472,35 +454,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 91
+#line 90
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 92
+#line 91
  await testRunner.WhenAsync("the customer completes the form with empty string into subject and valid data in " +
                         "all other fields", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 93
+#line 92
  await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 94
+#line 93
  await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Validate Subject field with less charcters than required", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="Validate Subject field with less charcters than required")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "Validate Subject field with less charcters than required")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task ValidateSubjectFieldWithLessCharctersThanRequired()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validate Subject field with less charcters than required", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 96
+#line 95
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -510,37 +489,34 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 97
+#line 96
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 98
+#line 97
  await testRunner.WhenAsync("the customer enters less charcters in subject field than required", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 99
+#line 98
  await testRunner.AndAsync("customer enters valid details in all other fields except subject", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 99
+ await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 100
- await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 101
  await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Validate Subject field with more charcters than required", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="Validate Subject field with more charcters than required")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "Validate Subject field with more charcters than required")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task ValidateSubjectFieldWithMoreCharctersThanRequired()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validate Subject field with more charcters than required", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 103
+#line 102
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -550,37 +526,34 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 104
+#line 103
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 105
+#line 104
  await testRunner.WhenAsync("the customer enters more charcters in subject field than allowed", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 106
+#line 105
  await testRunner.AndAsync("customer enters valid details in all other fields except subject", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 107
+#line 106
  await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 108
+#line 107
  await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Validate Empty Message Field", Skip="Ignored")]
+        [Xunit.SkippableFactAttribute(DisplayName="Validate Empty Message Field")]
         [Xunit.TraitAttribute("FeatureTitle", "ContactUs")]
         [Xunit.TraitAttribute("Description", "Validate Empty Message Field")]
-        [Xunit.TraitAttribute("Category", "manual")]
         public async System.Threading.Tasks.Task ValidateEmptyMessageField()
         {
-            string[] tagsOfScenario = new string[] {
-                    "manual",
-                    "ignore"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validate Empty Message Field", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 110
+#line 109
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -590,17 +563,17 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 111
+#line 110
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 112
+#line 111
  await testRunner.WhenAsync("the customer completes the form with empty string into message and valid data in " +
                         "all other fields", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 113
+#line 112
  await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 114
+#line 113
  await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -615,7 +588,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Whitespace validation in required fields", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 116
+#line 115
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -625,16 +598,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 117
+#line 116
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 118
+#line 117
     await testRunner.WhenAsync("the customer enters spaces in the Name, Email, and Phone fields", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 119
+#line 118
     await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 120
+#line 119
     await testRunner.ThenAsync("the user is presented with the correct validation message", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -652,7 +625,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Verification of Page Refresh", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 123
+#line 122
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -662,16 +635,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 124
+#line 123
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 125
+#line 124
  await testRunner.WhenAsync("the customer enters a valid Name,Email,Phone,Subject and Message", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 126
+#line 125
  await testRunner.AndAsync("clicks on refresh button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 127
+#line 126
  await testRunner.ThenAsync("all fields should be cleared", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -689,7 +662,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Browser compatibility validation", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 130
+#line 129
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -699,10 +672,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 131
+#line 130
     await testRunner.WhenAsync("the Contact Us form is opened on different browsers", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 132
+#line 131
     await testRunner.ThenAsync("the form should function across all supported browsers as expected", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -720,7 +693,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Customer is not allowed to click submit button without filling required fields", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 135
+#line 134
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -730,16 +703,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 136
+#line 135
  await testRunner.GivenAsync("the Contact Us page is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 137
+#line 136
  await testRunner.WhenAsync("the customer leaves mandatory fileds empty", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 138
+#line 137
  await testRunner.AndAsync("the customer submits the message", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 139
+#line 138
  await testRunner.ThenAsync("the submit buitton remains disabled", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
