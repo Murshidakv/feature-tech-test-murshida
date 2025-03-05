@@ -85,5 +85,114 @@ namespace QA.Contribution.Test.Journey.StepDefinition
             _contactUsPage.EnterInvalidEmailAddress();
             _contactUsPage.EnterMessage();
         }
+        [When("the customer enters a valid Name,Email,Phone,Subject and Message")]
+        public void WhenTheCustomerEntersAValidNameEmailPhoneSubjectAndMessage()
+        {
+            _contactUsPage.EnterName();
+            _contactUsPage.EnterEmailAddress();
+            _contactUsPage.EnterPhone();
+            _contactUsPage.EnterSubject();
+            _contactUsPage.EnterMessage();
+        }
+
+        [When("the customer leaves all the fields empty")]
+        public void WhenTheCustomerLeavesAllTheFieldsEmpty()
+        {
+            _contactUsPage.ClearName();
+            _contactUsPage.ClearEmailAddress();
+            _contactUsPage.ClearPhone();
+            _contactUsPage.ClearSubject();
+            _contactUsPage.ClearMessage();
+        }
+      
+        [When("the customer fills the form with numbers as name")]
+        public void WhenTheCustomerFillsTheFormWithNumbersAsName()
+        {
+            _contactUsPage.EnterNameAsDigits();
+            _contactUsPage.EnterEmailAddress();
+            _contactUsPage.EnterPhone();
+            _contactUsPage.EnterSubject();
+            _contactUsPage.EnterMessage();
+
+        }
+
+        [When("the customer completes the form with special characters in the phone number field and valid data in all other fields")]
+        public void WhenTheCustomerCompletesTheFormWithSpecialCharactersInThePhoneNumberFieldAndValidDataInAllOtherFields()
+        {
+            _contactUsPage.EnterName();
+            _contactUsPage.EnterEmailAddress();
+            _contactUsPage.EnterPhonenumberWithSpecialChars();
+            _contactUsPage.EnterSubject();
+            _contactUsPage.EnterMessage();
+
+        }
+        [When("the customer enters a phone number longer than the required length")]
+        public void WhenTheCustomerEntersAPhoneNumberLongerThanTheRequiredLength()
+        {
+            _contactUsPage.EnterPhonenumberWithMoreCharacters();
+
+        }
+        [When("the customer enters valid details in all other fields except phone")]
+        public void WhenTheCustomerEntersValidDetailsInAllOtherFieldsExceptPhone()
+        {
+            _contactUsPage.EnterName();
+            _contactUsPage.EnterEmailAddress();
+            _contactUsPage.EnterSubject();
+            _contactUsPage.EnterMessage();
+        }
+        [When("the customer enters a phone number shorter than the required length")]
+        public void WhenTheCustomerEntersAPhoneNumberShorterThanTheRequiredLength()
+        {
+            _contactUsPage.EnterPhonenumberWithLessCharacters();
+        }
+        [When("the customer completes the form with empty string into subject and valid data in all other fields")]
+        public void WhenTheCustomerCompletesTheFormWithEmptyStringIntoSubjectAndValidDataInAllOtherFields()
+        {
+            _contactUsPage.EnterName();
+            _contactUsPage.EnterEmailAddress();
+            _contactUsPage.EnterPhone();
+            _contactUsPage.ClearSubject();
+            _contactUsPage.EnterMessage();
+        }
+        [When("the customer enters less charcters in subject field than required")]
+        public void WhenTheCustomerEntersLessCharctersInSubjectFieldThanRequired()
+        {
+            _contactUsPage.EnterSubjectWithLessCharacters();
+        }
+
+        [When("the customer enters more charcters in subject field than allowed")]
+        public void WhenTheCustomerEntersMoreCharctersInSubjectFieldThanAllowed()
+        {
+            _contactUsPage.EnterSubjectWithMoreCharacters();
+        }
+        [When("customer enters valid details in all other fields except subject")]
+        public void WhenCustomerEntersValidDetailsInAllOtherFieldsExceptSubject()
+        {
+            _contactUsPage.EnterName();
+            _contactUsPage.EnterEmailAddress();
+            _contactUsPage.EnterPhone();
+            _contactUsPage.EnterMessage();
+        }
+        [When("the customer completes the form with empty string into message and valid data in all other fields")]
+        public void WhenTheCustomerCompletesTheFormWithEmptyStringIntoMessageAndValidDataInAllOtherFields()
+        {
+            _contactUsPage.EnterName();
+            _contactUsPage.EnterEmailAddress();
+            _contactUsPage.EnterPhone();
+            _contactUsPage.ClearSubject();
+            _contactUsPage.ClearMessage();
+        }
+        [When("the customer enters spaces in the Name, Email, and Phone fields")]
+        public void WhenTheCustomerEntersSpacesInTheNameEmailAndPhoneFields()
+        {
+            _contactUsPage.EnterNameWithWhiteSpace();
+            _contactUsPage.EnterEmailWithWhiteSpace();
+            _contactUsPage.EnterPhoneWithWhiteSpace();
+            _contactUsPage.EnterSubject();
+            _contactUsPage.EnterMessage();
+        }
+
+
+
     }
 }
